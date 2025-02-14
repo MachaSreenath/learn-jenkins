@@ -4,7 +4,7 @@ pipeline {
             label 'AGENT-1'
         }
     }
-
+    // build
     stages {
         stage('Build') {
             steps {
@@ -22,4 +22,11 @@ pipeline {
    }
    }
     }
+    // post build
+post {
+    always {
+        echo 'i will always say hello again'
+    }
+    }
 }
+
