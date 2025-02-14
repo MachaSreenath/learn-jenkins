@@ -27,6 +27,9 @@ post {
     always {
         echo 'i will always say hello again'
     }
+    failure {
+        echo 'this runs when pipeline is failed'
+    }
     }
 }
 
