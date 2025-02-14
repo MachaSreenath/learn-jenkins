@@ -25,7 +25,7 @@ pipeline {
     // post build
 post {
     always {
-        echo 'i will always say hello again'
+        echo 'i will always say hello again' //irrespective of status of pipeline this will always run
     }
     failure {
         echo 'this runs when pipeline is failed, used generally to send some allerts'
