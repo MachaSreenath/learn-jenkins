@@ -30,6 +30,9 @@ post {
     failure {
         echo 'this runs when pipeline is failed, used generally to send some allerts'
     }
+    success {
+        echo 'executes when pipeline is success'
+    }
     }
 }
 
